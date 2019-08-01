@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+
+    <Authors>Alvaro Montero Gonzalez</Authors>
+    <owners>Alvaro Montero Gonzalez</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <Description>Implementation of a MsTestContext configuration provider for Microsft extensions configuration.</Description>
+    <Copyright>Copyright 2019</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIconUrl>https://www.nuget.org/Content/gallery/img/default-package-icon.svg</PackageIconUrl>
+    <PackageReleaseNotes>First Release.</PackageReleaseNotes>
+    <RepositoryUrl>https://github.com/alvaromongon/Microsoft.Extensions.Configuration.MsTestContext</RepositoryUrl>
+
+    <PackageTags>netstandard;Microsoft;Configuration;MsTests;Provider</PackageTags>
+
+    <PackageId>Extensions.Configuration.MsTestContext</PackageId>
+
+    <PackageProjectUrl>https://github.com/alvaromongon/Microsoft.Extensions.Configuration.MsTestContext</PackageProjectUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="2.2.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.4.0" />
+  </ItemGroup>
+
+</Project>

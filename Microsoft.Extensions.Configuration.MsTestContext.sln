@@ -1,16 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Extensions.Configuration.MsTestContext", "Microsoft.Extensions.Configuration.MsTestContext\Microsoft.Extensions.Configuration.MsTestContext.csproj", "{359C72DD-BB17-4501-A8B9-63C2B727BD1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Extensions.Configuration.MsTestContext", "src\Microsoft.Extensions.Configuration.MsTestContext\Microsoft.Extensions.Configuration.MsTestContext.csproj", "{359C72DD-BB17-4501-A8B9-63C2B727BD1D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0CBD964B-2561-4233-BBDB-54197096B3CA}"
 	ProjectSection(SolutionItems) = preProject
+		azure-pipelines.yml = azure-pipelines.yml
 		nuget.config = nuget.config
+		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Extensions.Configuration.MsTestContext.UnitTests", "Microsoft.Extensions.Configuration.MsTestContext.UnitTests\Microsoft.Extensions.Configuration.MsTestContext.UnitTests.csproj", "{D05AECA9-C720-4351-86A3-782E3B5B2BD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Extensions.Configuration.MsTestContext.UnitTests", "tests\Microsoft.Extensions.Configuration.MsTestContext.UnitTests\Microsoft.Extensions.Configuration.MsTestContext.UnitTests.csproj", "{D05AECA9-C720-4351-86A3-782E3B5B2BD3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{18241D2D-806B-4AF2-A78B-45D116404F7E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F8BEB1AC-BAA2-49DA-BAC8-7A56A9A2120D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +35,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{359C72DD-BB17-4501-A8B9-63C2B727BD1D} = {18241D2D-806B-4AF2-A78B-45D116404F7E}
+		{D05AECA9-C720-4351-86A3-782E3B5B2BD3} = {F8BEB1AC-BAA2-49DA-BAC8-7A56A9A2120D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1D0B8C63-F06F-42DA-9EAC-CFDD507A5A13}

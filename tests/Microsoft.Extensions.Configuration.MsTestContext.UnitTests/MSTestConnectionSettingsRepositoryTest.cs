@@ -1,4 +1,3 @@
-using Microsoft.Extensions.Configuration;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Microsoft.Extensions.Configuration.MsTestContext.UnitTest
@@ -17,17 +16,17 @@ namespace Microsoft.Extensions.Configuration.MsTestContext.UnitTest
         }
 
         [TestMethod]
-        public void When_Call_GetSettingNotExistsString_ReturnDefaultValue()
-        {
-            var value = _configurationRoot.GetValue("SettingStringNotExists", "DefaultStringValue");
-            Assert.AreEqual("DefaultStringValue", value);
-        }
-
-        [TestMethod]
-        public void When_Call_GetSettingString_ReturnExpectedValue()
+        public void When_GetConnectionString_ReturnExpectedValue()
         {
             var value = _configurationRoot.GetConnectionString("SettingString");
             Assert.AreEqual("SettingStringValue", value);
         }
+
+        [TestMethod]
+        public void When_GetConnectionString_And_DoesNotExit_ReturnNull()
+        {
+            var value = _configurationRoot.GetConnectionString("SettingStringNotExists");
+            Assert.IsNull(value);
+        }        
     }
 }

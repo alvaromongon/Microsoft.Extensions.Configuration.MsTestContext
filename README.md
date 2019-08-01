@@ -1,10 +1,18 @@
-# Microsoft.Extensions.Configuration.MsTestContext
-Ms test context configuration provider for Microsft extensions configuration
+# Introduction 
+Implementation of a MsTestContext configuration provider for Microsft extensions configuration
 
-In order to test it, just:
-- Download it and open it with visual studio (I was using VS 2017).
-- Using the test menu under test setting select the test settings file (The .runsettings file in the test project).
-- Run the tests.
+If you are using MsTests with runsettings files in your test projects, 
+It is nice to load the settings into the Microsoft extensions configuration abstractions. 
+So you can get the configuration from IConfiguration.
 
+# Getting Started
+- Install the package in your test project
+- Create the runsettings file
+- Select the runsettings file as your tests settings file in the test explorer windows (VS2019)
+- Create the configuration root object loading data from the test context: ".AddMsTestContext(context)""
+- Use the configuration interface
 
-Cheers.
+# Build and Test
+I was using VS2019 to build the solution and there are some tests to show how could be used.
+So you can run the tests locally and follow the code. Just remember to select you tests settings file.
+
