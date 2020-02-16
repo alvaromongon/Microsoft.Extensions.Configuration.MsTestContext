@@ -9,7 +9,7 @@ namespace Microsoft.Extensions.Configuration.MsTestContext
         {
             IDictionary<string, string> result = new Dictionary<string, string>();
 
-            foreach (var propertyKey in testContext.Properties.Keys)
+            foreach (string propertyKey in testContext.Properties.Keys)
             {
                 result.Add(propertyKey, testContext.Properties[propertyKey].ToString());
             }
